@@ -1,0 +1,148 @@
+main
+{
+    background-color:#eee;
+    background-image: url(../images/light-pat.png);
+    background-attachment: fixed;
+}
+
+body
+{
+    background-color:#eee;/*rgba(255,255,255,1);*/
+}
+
+img
+{
+    margin: 0px;
+}
+
+.button-collapse{
+    color: #E75710;
+}
+
+header, footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header{
+    z-index: 20; //zindex issues
+}
+
+main {
+    flex: 1 0 auto;
+    padding-top: 100px; //since-navbar is 100px
+    z-index: 5;
+}
+
+.parallax-container{
+    z-index:10;
+}
+
+.padding-left
+{
+    padding-left: 2rem;
+}
+
+.padding-small
+{
+    padding: 1.3rem;
+}
+
+.padding-tiny
+{
+    padding: .75rem;
+}
+
+.margin-extra{
+    margin: 0 1rem;
+}
+
+.padding-left-more
+{
+    padding-left: 4rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.burger-menu{
+    position: absolute;
+    top: 50%;
+    transform: translate(31%,-22%);
+}
+
+nav{
+    position: fixed;
+}
+
+.nav-img-padding
+{
+    top : 10%;
+    height: 80%;
+}
+
+.clg-nav-img-padding
+{
+    top : 20%;
+    height: 60%;
+}
+
+#slide-out{
+    /*overflow-y: visible;*/
+    width: 248px;
+}
+
+
+.card_heading{
+    color: #424242 !important;
+}
+
+.blockdisplay{
+    display:block;
+}
+
+.textlink{
+    transition: color 0.3s ease-out;
+    cursor:pointer;
+}
+
+.textlink:hover{
+    transition: color 0.3s ease-out;
+    color:#E75710;
+    cursor:pointer;
+}
+
+.title_block{
+    height:180px;
+    width:100%;
+    z-index: 12;
+}
+
+.title_block_text{
+    margin:0px;
+    padding-top: 140px;
+    font-size: 1.3em;
+    color:#fff;
+}
+
+#about_text{
+    font-size: 1.4em;
+}
+
+.jslink{
+cursor:pointer;
+}

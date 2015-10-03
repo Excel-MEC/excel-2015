@@ -1,0 +1,21 @@
+.no-margin
+{
+    margin: 0px;
+}
+
+.padding-collection {
+    padding-left: 35px;
+}
+
+.image-collection {
+    height: 66px !important;
+    width: auto !important;
+}
+
+#depteventscontainer{
+    padding-top: 2%;
+}
+
+.collection{
+    cursor:pointer;
+}

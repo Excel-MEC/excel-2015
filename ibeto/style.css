@@ -1,0 +1,751 @@
+@font-face
+{
+font-family: Aller_Std_Lt;
+src: url(fonts/Aller_Std_Lt.ttf);
+
+}
+
+@font-face
+{
+font-family: Dosis-Book;
+src: url(fonts/Dosis-Book.ttf);
+
+}
+
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.coverscreen {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color:#fff;
+	background-image:url(images/loading.gif);
+	background-repeat:no-repeat;
+	background-position:50% 55%;
+	background-size:10%;
+}
+/*
+.coverscreen {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color:#fff;
+	background-image:url(images/loading.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+}*/
+
+
+
+* {
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	overflow:visible;
+}
+
+
+a:link
+{
+	text-decoration: none;
+}
+a:visited
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+	cursor:pointer;
+}
+a:active
+{
+	text-decoration:underline;
+}
+
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+li:before {
+  content: "•";
+  padding-right: 5px;
+}
+
+
+
+
+.slideText
+{
+	font-family:Aller_Std_Lt;
+	font-size:3em;
+	color:#e24029;
+	text-align:center;
+}
+
+#lh, #rh, #logo 
+{
+	width:100%;
+	position:fixed;	
+}
+#collogo
+{
+	position:fixed;
+	width:12%;
+	height:auto;	
+	z-index:1100;
+	top:2%;left:1%;
+}
+
+#excellogo
+{
+	position:fixed;
+	width:15%;
+	height:auto;	
+	margin-left:-7.5%;
+	z-index:1100;
+	left:50%;
+	top:2%
+}
+
+#prompter
+{
+	position:fixed;
+	width:4%;
+	height:auto;	
+	margin-left:-2.45%;
+	z-index:1100;
+	left:50%;
+}
+
+#ibetlogo
+{
+	position:fixed;
+	width:8%;
+	height:auto;	
+	z-index:1100;
+}
+
+.popupmdl
+{
+	z-index:2100;
+}
+
+#nav
+{
+position:fixed;
+right:0%;
+width:5%;
+top:50%;
+z-index:2000;
+overflow:visible;
+}
+
+#nav ul
+{
+	list-style:none;
+	width:100%;
+	overflow:visible;
+}
+
+#nav a
+{
+	width:100%;
+	overflow:visible;
+	}
+
+#nav li:before
+{
+	content:"";
+}
+
+#nav li
+{
+width:100%;
+overflow:visible;
+}
+
+#nav li img
+{
+	width:25%;
+	padding-top:15%;
+}
+
+
+#notify
+{
+	position:fixed;
+	top: 5%;
+	left:65%;
+	height:10%;
+	width:23%;
+
+	z-index:1850;
+}
+
+
+#notif_txt
+{
+	font-family:Dosis-Book;
+	font-size:1.3em;
+	letter-spacing:.05em;
+	color:#DF3E28;
+
+	text-align:justify;
+}
+
+#seed
+{
+	position:fixed;
+	top:100%;
+	width:100%;
+	height:100%;
+	background-image:url(images/seed.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	
+}
+
+#seedText
+{
+	position:fixed;
+	left:-100%;
+	width:100%;
+	height:100%;
+}
+	
+#cloud
+{
+	position:fixed;
+	right:-100%;
+	top:10%;
+	width:100%;
+	height:100%;
+	background-image:url(images/cloud.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+
+#rain1
+{
+	position:fixed;
+	opacity:0;
+	right:40%;
+	top:0%;
+	width:100%;
+	height:100%;
+	background-image:url(images/rain1.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	
+}
+#rain2
+{
+	position:fixed;
+	opacity:0;
+	right:40%;
+	top:0%;
+	width:100%;
+	height:100%;
+	background-image:url(images/rain2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	
+}
+#rain3
+{
+	position:fixed;
+	opacity:0;
+	right:40%;
+	top:0%;
+	width:100%;
+	height:100%;
+	background-image:url(images/rain3.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	
+}
+#rain4
+{
+	position:fixed;
+	opacity:0;
+	right:40%;
+	top:0%;
+	width:100%;
+	height:100%;
+	background-image:url(images/rain4.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	
+}
+#rain5
+{
+	position:fixed;
+	opacity:0;
+	right:40%;
+	top:0%;
+	width:100%;
+	height:100%;
+	background-image:url(images/rain5.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	
+}
+
+
+#rainText
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+	
+#plant
+{
+	position:fixed;
+	top:100%;
+	width:100%;
+	height:100%;
+	background-image:url(images/tree.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+#sun
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-image:url(images/sun.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+#sunText
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+
+#chedi
+{
+	position:fixed;
+	opacity:0;
+	width:100%;
+	height:100%;
+	background-image:url(images/l1.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+#valyaChedi
+{
+	position:fixed;
+	opacity:0;
+	width:100%;
+	height:100%;
+	background-image:url(images/l2.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}	
+
+#Maram
+{
+	position:fixed;
+	opacity:0;
+	width:100%;
+	height:100%;
+	background-image:url(images/l3.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}	
+
+
+
+#finalText1
+{
+	position:fixed;
+	opacity:0;
+	top:80%;
+	left:-25%;
+	width:100%;
+	height:100%;
+}
+
+
+#finalText2
+{
+	position:fixed;
+	opacity:0;
+	top:80%;
+	left:25%;
+	width:100%;
+	height:100%;
+}
+
+
+
+
+.art
+{
+	font-family:Dosis-Book;
+	font-size:1em;
+	letter-spacing:.05em;
+	color:#000;
+	top:25%;
+	width:40%;
+	z-index:1250;
+	text-align:justify;
+}
+
+.bt-button
+{
+	position:fixed;
+	bottom:3%;
+	overflow:visible;
+	z-index:1300;
+}
+
+.lart
+{
+	position:fixed;
+	left:8%;
+}
+
+.rart
+{
+	position:fixed;
+	right:3%;
+	width:32%;
+	overflow:visible;
+}
+
+.rartic
+{
+	position:fixed;
+	left:80%;
+	overflow:visible;
+}
+
+#IIS 
+{
+	position:fixed;
+	bottom:14%;
+	left:0em;
+	width:49em;
+}
+
+ #JIS
+{
+	position:fixed;
+	bottom:14%;
+	left:2em;
+	width:39em;
+}
+
+.col-md-1{
+	width:6em;
+	height: 5em;
+}
+
+#ibetoTL
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	height:5em;
+	width: 5em;
+	background:url(images/TL_G.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+#ibetoTL:hover
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	background:url(images/TL.png);
+	height:5em;
+	width: 5em;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+
+#ibetoprize
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	height:5em;
+	width: 5em;
+	background:url(images/prize_G.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+#ibetoprize:hover
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	background:url(images/prize.png);
+	height:5em;
+	width: 5em;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+#ibetorules
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	height:5em;
+	width: 5em;
+	background:url(images/rules_G.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+#ibetorules:hover
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	background:url(images/rules.png);
+	height:5em;
+	width: 5em;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+#ibetoPS
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	height:5em;
+	width: 5em;
+	background:url(images/PS_G.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+#ibetoPS:hover
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	background:url(images/PS.png);
+	height:5em;
+	width: 5em;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+#ibetoAF
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	height:5em;
+	width: 5em;
+	background:url(images/AF_G.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+#ibetoAF:hover
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	background:url(images/AF.png);
+	height:5em;
+	width: 5em;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+
+
+#ibetoPP
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	height:5em;
+	width: 5em;
+	background:url(images/PP_G.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+#ibetoPP:hover
+{
+	-webkit-transition: background-image .5s ease-in-out;
+	-moz-transition: background-image .5s ease-in-out;
+	-o-transition: background-image .5s ease-in-out;
+	-ms-transition: background-image .5s ease-in-out; 
+	transition: background-image .5s ease-in-out;
+	background:url(images/PP.png);
+	height:5em;
+	width: 5em;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+
+.con-detail
+{
+	max-height:0;
+	transition: max-height 0.5s ease-out;
+    	overflow: hidden;
+}
+.con-ti:hover .con-detail
+{
+	max-height: 5000px;
+    	transition: max-height 2s ease-in;
+}
+
+
+
+
+#sponsor
+{
+	position:fixed;
+	bottom:2%;
+	width:9%;
+	right:.5%;
+	z-index:1200;
+	
+}
+
+
+#ispin
+{
+	position:fixed;
+	right:35%;
+	bottom:2%;
+	height:150px;
+	width:150px;
+}
+
+#ispin:hover
+{
+	cursor:pointer;
+}
+
+#fcard
+{
+	height:150px;
+	width:150px;
+}
+
+.front, .back
+{
+	position:absolute;
+	height:150px;
+	width:150px;
+}
+
+.front img
+{
+	-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+   	backface-visibility: hidden;
+	height:150px;
+	width:150px;
+	  -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+}
+
+.back img
+{
+	-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+   	backface-visibility: hidden;
+	height:150px;
+	width:150px;
+	  -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+}
+
+.flipped {
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+         -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+               /* IE6–IE9 */
+               filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9914448613738104, M12=-0.13052619222005157,M21=0.13052619222005157, M22=0.9914448613738104, sizingMethod='auto expand');
+                 zoom: 1;
+    }
+
+.tooltip-inner
+{
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
